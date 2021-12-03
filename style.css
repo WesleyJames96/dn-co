@@ -1,0 +1,111 @@
+body {
+    background-color: #ffe6cc !important;
+}
+
+
+.sidenav {
+    height: 100%; 
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(110, 83, 83); 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 1s; 
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidenav p {
+    color: floralwhite;
+    text-align: cente;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  header {
+    margin: auto;
+    text-align: center;
+  }
+
+  img {
+      max-width: 100%;
+  }
+
+  .gallery-item {
+      opacity: 1;
+      display: block;
+      transition: 1s ease;
+      backface-visibility: hidden;
+  }
+
+  .figure-caption {
+      color: black;
+      width: 95%;
+      background-color: white;
+      padding: 0px 10px;
+      margin: auto;
+      position: relative;
+      bottom: 4vh;
+      opacity: 0.5;
+      display: block;
+      transition: 1s ease;
+      backface-visibility: hidden;
+  }
+
+  .col:hover .gallery-item {
+      opacity: 0.6;
+  }
+
+  .col:hover .figure-caption {
+      opacity: 1;
+  }
+
+  .figure-caption h1 {
+      margin: auto;
+      text-align: center;
+      text-transform: capitalize;
+      font-weight: 200 !important;
+  }
+
+ .info {
+     float: right;
+ }
+  
+ button {
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 1vh 0vw;
+    border: none;
+    border-radius: 5px;
+ }
